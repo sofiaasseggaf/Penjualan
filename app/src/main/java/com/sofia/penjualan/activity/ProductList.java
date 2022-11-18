@@ -52,7 +52,7 @@ public class ProductList extends AppCompatActivity {
         randomize();
 
         if (listProduct.size()>0) {
-            Uri path1 = Uri.parse("android.resource://com.sofia.penjualan/" + R.drawable.rinsocair);
+            /*Uri path1 = Uri.parse("android.resource://com.sofia.penjualan/" + R.drawable.rinsocair);
             String path11 = path1.toString();
             Uri path2 = Uri.parse("android.resource://com.sofia.penjualan/" + R.drawable.sunlight);
             String path22 = path2.toString();
@@ -60,7 +60,7 @@ public class ProductList extends AppCompatActivity {
             db.execSQL("update product set product_image='"+path11+ "' " +
                     "where product_name='"+"Rinso Cair" +"'");
             db.execSQL("update product set product_image='"+path22+ "' " +
-                    "where product_name='"+"Sunlight" +"'");
+                    "where product_name='"+"Sunlight" +"'");*/
 
             itemList = new AdapterListProduct(listProduct, new AdapterListProduct.AdapterListProductListener() {
                 @Override
