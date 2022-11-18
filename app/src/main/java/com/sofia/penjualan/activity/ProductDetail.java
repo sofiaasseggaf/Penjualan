@@ -77,12 +77,12 @@ public class ProductDetail extends AppCompatActivity {
     }
 
     private void setData(){
-        if (!selectedProduct.getProduct_image().equalsIgnoreCase("")){
+        /*if (!selectedProduct.getProduct_image().equalsIgnoreCase("")){
             String encodedImage = selectedProduct.getProduct_image();
             byte[] decodedString = Base64.decode(encodedImage, Base64.NO_WRAP);
             Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
             img_product.setImageBitmap(decodedByte);
-        }
+        }*/
         nama_product.setText(selectedProduct.getProduct_name());
         String a = checkDesimal(String.valueOf(selectedProduct.getPrice()));
         harga_product.setText("Rp. "+a+",-");
