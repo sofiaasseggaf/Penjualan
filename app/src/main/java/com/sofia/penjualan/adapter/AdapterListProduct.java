@@ -50,12 +50,12 @@ public class AdapterListProduct extends RecyclerView.Adapter<RecyclerView.ViewHo
         ((Penampung)holder).nama_product.setText(dataItemList.get(position).getProduct_name());
         String a = checkDesimal(String.valueOf(dataItemList.get(position).getPrice()));
         ((Penampung)holder).harga_product.setText("Rp. "+a+",-");
-        if (!dataItemList.get(position).getProduct_image().equalsIgnoreCase("")){
+        /*if (!dataItemList.get(position).getProduct_image().equalsIgnoreCase("")){
             String encodedImage = dataItemList.get(position).getProduct_image();
             byte[] decodedString = Base64.decode(encodedImage, Base64.NO_WRAP);
             Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
             ((Penampung)holder).img_product.setImageBitmap(decodedByte);
-        }
+        }*/
         ((Penampung)holder).btn_buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
