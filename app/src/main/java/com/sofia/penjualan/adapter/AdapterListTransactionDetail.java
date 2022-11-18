@@ -50,12 +50,12 @@ public class AdapterListTransactionDetail extends RecyclerView.Adapter<RecyclerV
         for (int i=0; i<listProduct.size(); i++){
             if (listProduct.get(i).getProduct_code().equalsIgnoreCase(dataItemList.get(position).getProduct_code())){
                 ((Penampung)holder).nama_product.setText(listProduct.get(i).getProduct_name());
-                if (!listProduct.get(i).getProduct_image().equalsIgnoreCase("")){
+                /*if (!listProduct.get(i).getProduct_image().equalsIgnoreCase("")){
                     String encodedImage = listProduct.get(i).getProduct_image();
                     byte[] decodedString = Base64.decode(encodedImage, Base64.DEFAULT);
                     Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
                     ((Penampung)holder).img_product.setImageBitmap(decodedByte);
-                }
+                }*/
             }
         }
         String a = checkDesimal(String.valueOf(dataItemList.get(position).getSubtotal()));
